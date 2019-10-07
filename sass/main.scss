@@ -1,0 +1,350 @@
+//
+//Styles for the mobile version
+main{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Calibri", sans-serif;
+}
+
+section{
+    width:100%;
+    height:100%;
+}
+
+//Styles for the HERO section
+.hero{
+    background: url(../public/images/small-vave.png);
+    background-position: bottom center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:568px;
+}
+
+header{
+    margin-top:20px;
+    width:280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height:50px;
+}
+
+.logo-img{
+    height:100%;
+}
+
+.top-nav{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-nav-link{
+    text-decoration: none;
+    font-family:"Calibri", sans-serif;
+    color:#ffffff;
+}
+
+.burger-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height:34px;
+}
+
+.burger-line{
+    width:50px;
+    height:6px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:280px;
+    margin-top:60px;
+}
+
+.hero-title{
+    text-align: center;
+    font-size: 40px;
+    color:#ffffff;
+    line-height:48px;
+    font-weight:600;
+    font-family: "Calibri", sans-serif;
+}
+
+.hero-subtitle{
+    text-align: center;
+    font-size: 30px;
+    color:#ffffff;
+    line-height:48px;
+    font-weight:400;
+    font-family: "Calibri", sans-serif;
+}
+
+.hero-text{
+    margin-top:50px;
+    font-size: 30px;
+    font-family: "Calibri";
+    color: #ffffff;
+    text-align: center;     
+}
+
+.hero-btn{
+    margin-top:50px;
+    width:200px;
+    height:50px;
+    border-radius: 35px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.hero-btn-text{
+    color:#2c6a95;
+    text-decoration: none;
+    font-size:20px;
+    font-weight:400;
+}
+
+//Styles for the CONTROL Section
+.typical-section{
+    width:280px;
+    margin-top:90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.typical-left{
+    width:100%;
+}
+
+.control-left-img{
+    width:100%;
+}
+
+.section-title{
+    font-size: 30px;
+    margin-top:40px;
+    font-family: "Calibri";
+    color: rgb(44, 106, 149);
+    font-weight: bold;
+    text-align: center;     
+}
+
+.section-text{
+    margin-top:20px;
+    font-size: 20px;
+    font-family: "Calibri";
+    color: rgb(58, 135, 178);
+    line-height: 1.2;
+    text-align: center;   
+}
+
+//Styles for the EASY Section
+.typical-left-video{
+    height:200px;
+
+    video{
+        height:100%;
+        width:100%;
+    }
+}
+
+//Styles for the CHILD Section
+
+//Stylesfor the FOOTER
+footer{
+    width:100%;
+    background: url(../public/images/small-vave-down.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:480px;
+    margin-top:80px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:300px;
+    justify-content: space-between;
+}
+
+.footer-link{
+    font-size: 30px;
+    font-family: "Calibri";
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+    text-align: center;    
+    text-decoration: none;
+}
+
+//Styles for the Mobile-Nav
+.mobile-nav{
+    width:100%;
+    height:100%;
+    position: fixed;
+    background: url(../public/images/small-vave-down.png);
+    background-position: bottom center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease-in-out;
+}
+
+.cross-icon{
+    width:40px;
+    position: absolute;
+    top:20px;
+    right:20px;
+
+    img{
+        width:100%;
+    }
+}
+
+.mobile-nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:200px;
+    justify-content: space-between;
+}
+
+.mobile-nav-link{
+    color:#fff;
+    text-decoration: none;
+    font-family: "Calibri", sans-serif;
+    font-size:30px;
+}
+
+//
+//Styles for the tablet version
+@media screen and (min-width:768px){
+    //Styles for the HERO Section
+    .hero{
+        height:900px;
+    }
+
+    header{
+        width:680px;
+        margin-top:40px;
+    }
+
+    .logo{
+        height:100px;
+    }
+
+    .burger-menu{
+        height:60px;
+    }
+
+    .burger-line{
+        width:80px;
+        height:10px;
+        border-radius: 5px;
+    }
+
+    .hero-content{
+        width:680px;
+        margin-top:90px;
+    }
+
+    .hero-title{
+        font-size: 70px;
+        line-height:76px;
+    }
+
+    .hero-subtitle{
+        font-size:40px;
+        margin-top:20px;
+    }
+
+    .hero-text{
+        font-size:50px;
+        margin-top:80px;
+    }
+
+    .hero-btn{
+        margin-top:120px;
+        width:280px;
+        height:80px;
+    }
+
+    .hero-btn-text{
+        font-size:36px;
+    }
+
+    //Styles for TYPICAL Section
+    .typical-section{
+        width:680px;
+        margin-top:150px;
+    }
+
+    .section-title{
+        font-size:50px;
+        margin-top:100px;
+    }
+
+    .section-text{
+        font-size:30px;
+    }
+
+    //Styles for FOOTER
+    footer{
+        margin-top:220px;
+    }
+    
+    .footer-links{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-link{
+        font-size:40px;
+        width:50%;
+    }
+
+    //Styles for Mobile Navigation
+    .cross-icon{
+        width:70px;
+        top:45px;
+        right:45px;
+    }
+
+    .mobile-nav-links{
+        height:400px;
+    }
+
+    .mobile-nav-link{
+        font-size:60px;
+    }
+}

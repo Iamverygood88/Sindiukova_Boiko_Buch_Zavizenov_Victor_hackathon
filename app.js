@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   res.render('home', { homemessage: "hey there", bio: "some generic bio info"});
 })
 
-app.get('/users', (req, res) => {
+app.get('/first', (req, res) => {
   //get user data here
 
   //try a database connection
@@ -24,7 +24,7 @@ app.get('/users', (req, res) => {
       return console.log(err.message);
     }
 
-    let query = "SELECT * FROM tbl_card";
+    let query = "SELECT * FROM tbl_sections";
 
     sql.query(query, (err, rows) => {
       connection.release();
@@ -35,7 +35,7 @@ app.get('/users', (req, res) => {
 
       console.log(rows);
 
-      res.render('user',rows[0]);
+      res.render('first',rows[0]);
     })
   })
 })
