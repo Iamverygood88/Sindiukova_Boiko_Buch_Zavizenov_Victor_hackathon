@@ -1,0 +1,31 @@
+{
+  "name": "sindiukova_boiko_buch_zavizenov_victor_hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iamverygood88/Sindiukova_Boiko_Buch_Zavizenov_Victor_hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iamverygood88/Sindiukova_Boiko_Buch_Zavizenov_Victor_hackathon/issues"
+  },
+  "homepage": "https://github.com/Iamverygood88/Sindiukova_Boiko_Buch_Zavizenov_Victor_hackathon#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.4",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.5",
+    "mysql": "^2.17.1"
+  }
+}
