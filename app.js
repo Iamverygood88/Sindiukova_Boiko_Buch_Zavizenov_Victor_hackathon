@@ -3,18 +3,15 @@ const hbs = require('hbs');
 const path = require('path');
 const sql = require('./utils/sql');
 
-const port = process.env.PORT || 5050;
+const port = 3000;
 const app = express();
 app.use(express.static('public'));
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname + '/views'));
 
-app.get('/', (req, res) => {
-  res.render('home', { homemessage: "hey there", bio: "some generic bio info"});
-})
 
-app.get('/first', (req, res) => {
+app.get('/', (req, res) => {
   //get user data here
 
   //try a database connection
@@ -35,8 +32,9 @@ app.get('/first', (req, res) => {
 
       console.log(rows);
 
-      res.render('first',rows[0]);
+      res.render('sections', rows[0]);
     })
+
   })
 })
 

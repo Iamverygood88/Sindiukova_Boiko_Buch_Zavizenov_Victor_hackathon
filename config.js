@@ -3,7 +3,7 @@ const config = {
     upass: "root", // blank for windows
     port: 8889, //3306 for windows
     host: 'localhost',
-    db: 'biscard'
+    db: 'db_thermosecurity'
 }
 
 module.exports = config; 
