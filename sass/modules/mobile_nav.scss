@@ -1,0 +1,42 @@
+.mobile-nav{
+    width:100%;
+    height:100vh;
+    position: fixed;
+    background: url(../images/small-vave-down.png);
+    background-position: center center;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease-in-out;
+}
+
+.cross-icon{
+    width:40px;
+    position: absolute;
+    top:20px;
+    right:20px;
+
+    img{
+        width:100%;
+    }
+}
+
+.mobile-nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:200px;
+    justify-content: space-between;
+}
+
+.mobile-nav-link{
+    color:#fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size:30px;
+}
