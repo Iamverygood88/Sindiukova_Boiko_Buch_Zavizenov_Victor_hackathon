@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 
       console.log(rows);
 
-      res.render('sections', rows[0]);
+      res.render('sections', rows);
     })
 
   })

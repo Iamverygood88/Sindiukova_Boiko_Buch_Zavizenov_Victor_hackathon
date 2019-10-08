@@ -30,35 +30,15 @@
             </div>
         </section>
         <!--CONTROL Section-->
-       
+        {{#each this}}
         <section class="control typical-section">
             <div class="typical-left">
-                <img src="images/render-placeholder.png" alt="3D model" class="control-left-img">
+                <img src="images/{{Content}}" alt="3D model" class="control-left-img">
             </div>
             <div class="typical-right">
                 <h2 class="section-title">{{Heading}}</h2>
                 <p class="section-text"> {{Paragraph}}</p>
             </div>
         </section>
-        
-        <!--EASY Section-->
-        <section class="easy typical-section">
-            <div class="typical-left typical-left-video">
-                <video src="#"></video>
-            </div>
-            <div class="typical-right">
-                <h2 class="section-title">Easy to use</h2>
-                <p class="section-text">Intuitive interface with light elements in a touch bar, that displays all necessary information. </p>
-            </div>
-        </section>
-        
-        <!--CHILD Section-->
-        <section class="child typical-section">
-            <div class="typical-left">
-                <img src="images/render-placeholder.png" alt="3D model" class="control-left-img">
-            </div>
-            <div class="typical-right">
-                <h2 class="section-title">Safe for kids</h2>
-                <p class="section-text">Face recognition camera and touch ID secures the access to the device. </p>
-            </div>
-        </section>
+        {{/each}}
+
