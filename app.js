@@ -20,23 +20,50 @@ app.get('/', (req, res) => {
     if (err) {
       return console.log(err.message);
     }
-
+  
     let query = "SELECT * FROM tbl_sections";
-    
-
     sql.query(query, (err, rows) => {
       connection.release();
 
       if (err) {
         return console.log(err.message);
       }
-
       console.log(rows);
 
       res.render('sections', {data: rows});
     })
-
+    
   })
+
+
+})
+
+
+app.get('/more', (req, res) => {
+  //get user data here
+
+  //try a database connection
+  // if a connection fails, error will be loged into a console
+  sql.getConnection((err, connection) => {
+    if (err) {
+      return console.log(err.message);
+    }
+  
+    let query = "SELECT * FROM tbl_interface";
+    sql.query(query, (err, rows) => {
+      connection.release();
+
+      if (err) {
+        return console.log(err.message);
+      }
+      console.log(rows);
+
+      res.render('slaider', rows[0]);
+    })
+    
+  })
+
+
 })
 
 app.listen(port,() => {
