@@ -1,3 +1,20 @@
-<section>
-    <img src="images/{{Image}}">
+
+
+<section class="slider-section">
+    <div class="slider">
+        <div class="slider-btn left-slider-btn">
+            <img src="../images/Rectangle-left.svg" alt="action button">
+        </div>
+        <div class="slider-container">
+            <div class="slider-images" style="right:0;">
+                {{#each  data}}
+                <img src="images/{{Image}}" data-offset={{id}}>
+                {{/each}}
+            </div>
+        </div>
+        <div class="slider-btn right-slider-btn">
+            <img src="../images/Rectangle.svg" alt="action button">
+        </div>
+    </div>
 </section>
+ 

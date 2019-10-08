@@ -56,9 +56,11 @@ app.get('/more', (req, res) => {
       if (err) {
         return console.log(err.message);
       }
+
+
       console.log(rows);
 
-      res.render('slaider', rows[0]);
+      res.render('slaider', {data: rows});
     })
     
   })

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Oct 07, 2019 at 09:28 PM
+-- Generation Time: Oct 08, 2019 at 05:37 AM
 -- Server version: 5.7.25
 -- PHP Version: 7.3.1
 
@@ -36,8 +36,12 @@ CREATE TABLE `tbl_interface` (
 --
 
 INSERT INTO `tbl_interface` (`id`, `Image`) VALUES
-(1, 'corgi.jpg'),
-(2, 'Welchcorgipembroke.jpg');
+(1, 'Smart Thermostat 1.jpg'),
+(2, 'Smart Thermostat 2.jpg'),
+(3, 'Smart Thermostat 3.jpg'),
+(4, 'Smart Thermostat 4.jpg'),
+(5, 'Smart Thermostat 5.jpg'),
+(6, 'Smart Thermostat 6.jpg');
 
 -- --------------------------------------------------------
 
@@ -57,9 +61,9 @@ CREATE TABLE `tbl_sections` (
 --
 
 INSERT INTO `tbl_sections` (`id`, `Heading`, `Paragraph`, `Content`) VALUES
-(1, 'Control your environment like never before', 'Manage all electronics in your smart home from one device. \r\n', 'Welchcorgipembroke.jpg'),
-(2, 'Easy to use', 'Intuitive interface with light elements in a touch bar, that displays all necessary information. ', 'Welchcorgipembroke.jpg'),
-(3, 'Safe for kids', 'Face recognition camera and touch ID secures the access to the device. \r\n', 'Welchcorgipembroke.jpg');
+(1, 'Control your environment like never before', 'Manage all electronics in your smart home from one device. \r\n', 'Tablet ThermoSecurity Mockup.jpg'),
+(2, 'Easy to use', 'Intuitive interface with light elements in a touch bar, that displays all necessary information. ', 'Wall ThermoSecurity Mockup.jpg'),
+(3, 'Safe for kids', 'Face recognition camera and touch ID secures the access to the device. \r\n', 'Phone ThermoSecurity Mockup.jpg');
 
 --
 -- Indexes for dumped tables
@@ -85,13 +89,13 @@ ALTER TABLE `tbl_sections`
 -- AUTO_INCREMENT for table `tbl_interface`
 --
 ALTER TABLE `tbl_interface`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tbl_sections`
 --
 ALTER TABLE `tbl_sections`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
