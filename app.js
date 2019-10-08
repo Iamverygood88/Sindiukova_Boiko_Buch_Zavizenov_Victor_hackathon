@@ -22,6 +22,7 @@ app.get('/', (req, res) => {
     }
 
     let query = "SELECT * FROM tbl_sections";
+    
 
     sql.query(query, (err, rows) => {
       connection.release();
