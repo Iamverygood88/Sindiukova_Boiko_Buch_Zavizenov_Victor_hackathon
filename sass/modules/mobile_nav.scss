@@ -40,3 +40,20 @@
     font-family: 'Montserrat', sans-serif;
     font-size:30px;
 }
+
+@media screen and (min-width:768px) {
+    .cross-icon{
+        width:70px;
+        top:45px;
+        right:45px;
+    }
+
+    .mobile-nav-links{
+        height:400px;
+    }
+
+    .mobile-nav-link{
+        font-size:60px;
+    }
+
+}

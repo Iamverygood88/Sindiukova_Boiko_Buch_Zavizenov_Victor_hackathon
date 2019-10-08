@@ -1,5 +1,6 @@
 @import 'modules/header';
 @import 'modules/mobile_nav';
+@import '_vars.scss';
 
 //
 //Styles for the Mobile version
@@ -10,12 +11,28 @@ main{
     flex-direction: column;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+
+    :nth-child(3) {
+        flex-direction: row-reverse;
+
+        .section-title {
+            text-align: end;
+        }
+
+        .section-text {
+            text-align: end;
+        }
+
+        
+    }
 }
 
 section{
     width:100%;
     height:100%;
 }
+
+
 
 //Styles for the HERO section
 .hero{
@@ -87,7 +104,7 @@ section{
 }
 
 .hero-btn-text{
-    color:#2c6a95;
+    color:$main-blue;
     text-decoration: none;
     font-size:20px;
     font-weight:400;
@@ -114,7 +131,7 @@ section{
     font-size: 30px;
     margin-top:40px;
     
-    color: rgb(44, 106, 149);
+    color: $main-blue;
     font-weight: bold;
     text-align: center;     
 }
@@ -187,26 +204,6 @@ footer{
     .hero{
         height:900px;
     }
-
-    header{
-        width:680px;
-        margin-top:40px;
-    }
-
-    .logo{
-        height:100px;
-    }
-
-    .burger-menu{
-        height:60px;
-    }
-
-    .burger-line{
-        width:80px;
-        height:10px;
-        border-radius: 5px;
-    }
-
     .hero-content{
         width:680px;
         margin-top:90px;
@@ -283,20 +280,7 @@ footer{
         width:50%;
     }
 
-    //Styles for Mobile Navigation
-    .cross-icon{
-        width:70px;
-        top:45px;
-        right:45px;
-    }
 
-    .mobile-nav-links{
-        height:400px;
-    }
-
-    .mobile-nav-link{
-        font-size:60px;
-    }
 }
 
 //
@@ -311,37 +295,7 @@ footer{
         background-position-y: bottom;
     }
 
-    header{
-        width:1200px;
-    }
-
-    .logo{
-        height:60px;
-    }
-
-    .burger-menu{
-        display: none;
-    }
-
-    .mobile-nav{
-        display: none;
-    }
-
-    .top-nav{
-        display: flex;
-        width:300px;
-    }
-
-    .top-nav-link{
-        font-size:20px;
-        font-weight:300;
-        transition: color 0.8s ease-in-out;
-    }
-
-    .top-nav-link:hover{
-        color:#3fe6e7;
-    }
-
+   
     .hero-content{
         width:1200px;
         display: flex;
@@ -393,7 +347,7 @@ footer{
     }
 
     .hero-btn:hover{
-        background-color:#3fe6e7;
+        background-color:$main-light-blue;
 
         .hero-btn-text{
             color:#ffffff;
