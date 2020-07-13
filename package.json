@@ -7,16 +7,8 @@
     "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  //"repository": {
-   // "type": "git",
-   // "url": "git+https://github.com/Iamverygood88/Sindiukova_Boiko_Buch_Zavizenov_Victor_hackathon.git"
- // },
   "author": "",
   "license": "ISC",
-  //"bugs": {
-  //  "url": "https://github.com/Iamverygood88/Sindiukova_Boiko_Buch_Zavizenov_Victor_hackathon/issues"
- // },
- // "homepage": "https://github.com/Iamverygood88/Sindiukova_Boiko_Buch_Zavizenov_Victor_hackathon#readme",
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.0.5",
