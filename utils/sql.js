@@ -6,7 +6,7 @@ var connect  = mysql.createPool({
     queueLimit      : 100,
     waitForConnections  :  true,
     host            : config.host,
-//     port            : config.port,
+    port            : config.port,
     user            : config.uname,
     password        : config.upass,
     database        : config.db
