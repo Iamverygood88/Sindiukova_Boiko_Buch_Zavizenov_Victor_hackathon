@@ -1,24 +1,22 @@
 {
   "name": "sindiukova_boiko_buch_zavizenov_victor_hackathon",
   "version": "1.0.0",
-  "engines": {
-   "node": "12.11.1"
-   },
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Iamverygood88/Sindiukova_Boiko_Buch_Zavizenov_Victor_hackathon.git"
-  },
+  //"repository": {
+   // "type": "git",
+   // "url": "git+https://github.com/Iamverygood88/Sindiukova_Boiko_Buch_Zavizenov_Victor_hackathon.git"
+ // },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Iamverygood88/Sindiukova_Boiko_Buch_Zavizenov_Victor_hackathon/issues"
-  },
-  "homepage": "https://github.com/Iamverygood88/Sindiukova_Boiko_Buch_Zavizenov_Victor_hackathon#readme",
+  //"bugs": {
+  //  "url": "https://github.com/Iamverygood88/Sindiukova_Boiko_Buch_Zavizenov_Victor_hackathon/issues"
+ // },
+ // "homepage": "https://github.com/Iamverygood88/Sindiukova_Boiko_Buch_Zavizenov_Victor_hackathon#readme",
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.0.5",
