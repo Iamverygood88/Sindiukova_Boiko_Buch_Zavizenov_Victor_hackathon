@@ -1,6 +1,9 @@
 {
   "name": "sindiukova_boiko_buch_zavizenov_victor_hackathon",
   "version": "1.0.0",
+  "engines": {
+   "node": "12.11.1"
+   },
   "description": "",
   "main": "index.js",
   "scripts": {
